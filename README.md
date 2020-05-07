@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.com/Mireiawen/ansible-role-solarwinds-papertrail.svg?branch=master)](https://travis-ci.com/Mireiawen/ansible-role-solarwinds-papertrail) [![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-mireiawen.solarwinds-papertrail-blueviolet)](https://galaxy.ansible.com/mireiawen/solarwinds-papertrail)
-
+[![Build Status](https://travis-ci.com/Mireiawen/ansible-role-solarwinds-papertrail.svg?branch=master)](https://travis-ci.com/Mireiawen/ansible-role-solarwinds_papertrail) [![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-mireiawen.solarwinds_papertrail-blueviolet)](https://galaxy.ansible.com/mireiawen/solarwinds_papertrail)
 
 # Solarwinds Papertrail
 
