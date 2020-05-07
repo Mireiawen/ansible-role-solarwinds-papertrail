@@ -1,0 +1,25 @@
+---
+## /* vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent: */
+
+- name: "Check for rsyslog config"
+  stat:
+    path: "{{ rsyslog_config_main }}"
+  register: "rsyslog"
+  changed_when: false
+
+- name: "Make sure the rsyslog folder exists"
+  file:
+    path: "{{ rsyslog_config_dir }}"
+    state: "directory"
+
+- name: "Install the SolarWinds Papertrail rsyslog configuration"
+  template:
+    src: "rsyslog.conf"
+    dest: "{{ rsyslog_config_file }}"
+    owner: "{{ log_config_owner }}"
+    group: "{{ log_config_group }}"
+    mode: "{{ log_config_mode }}"
+  notify:
+  - "Restart rsyslog"
+  when:
+  - "rsyslog.stat.exists"

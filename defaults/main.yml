@@ -1,0 +1,10 @@
+---
+## /* vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent: */
+
+log_config_owner: "root"
+log_config_group: "root"
+log_config_mode: "u=rw,go=r"
+rsyslog_config_dir: "/etc/rsyslog.d"
+rsyslog_config_file: "{{ rsyslog_config_dir }}/95-papertrail.conf"
+rsyslog_config_main: "/etc/rsyslog.conf"
+rsyslog_service: "rsyslog"
